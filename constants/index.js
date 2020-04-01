@@ -1,0 +1,76 @@
+export const OPEN_DATA_URL_GOV = 'https://data.gov.tw/datasets/export/json'
+export const DATASET_LIST = [{
+  name: '生育保健',
+  id: 291
+}, {
+  name: '出生及收養',
+  id: 285
+}, {
+  name: '求學及進修',
+  id: 280
+}, {
+  name: '服兵役',
+  id: 548
+}, {
+  name: '求職及就業',
+  id: 261
+}, {
+  name: '開創事業',
+  id: 258
+}, {
+  name: '婚姻',
+  id: 549
+}, {
+  name: '投資理財',
+  id: 254
+}, {
+  name: '休閒旅遊',
+  id: 253
+}, {
+  name: '交通及通訊',
+  id: 257
+}, {
+  name: '就醫',
+  id: 274
+}, {
+  name: '購屋及遷徙',
+  id: 417
+}, {
+  name: '選舉及投票',
+  id: 283
+}, {
+  name: '生活安全及品質',
+  id: 247
+}, {
+  name: '退休',
+  id: 550
+}, {
+  name: '老年安養',
+  id: 286
+}, {
+  name: '生命禮儀',
+  id: 416
+}, {
+  name: '公共資訊',
+  id: 249
+}]
+export const TABLE_HEAD_ROWS = [{
+  id: 'name',
+  name: '名稱',
+}, {
+  id: 'description',
+  name: '描述',
+}, {
+  id: 'dataRowDescription',
+  name: '資料欄位說明',
+}, {
+  id: 'provider',
+  name: '提供機關',
+}, {
+  id: 'lastUpdate',
+  name: '更新時間',
+}, {
+  id: 'link',
+  name: '',
+}]
+export const TABLE_DATA_KEY_LIST = ['資料集名稱', '資料集描述', '主要欄位說明', '提供機關', '修訂時間', '下載連結']
