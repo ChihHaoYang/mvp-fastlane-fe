@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-fetch'
+import { useState } from 'react'
 import { OPEN_DATA_URL_GOV, TABLE_HEAD_ROWS, DATASET_LIST } from '../../constants'
 import Table from '@material-ui/core/Table'
 import TableHead from '@material-ui/core/TableHead'
@@ -14,7 +15,7 @@ function renderDataRowCell(data) {
     ext: fileTypeList[index]
   }))
   return (
-    <TableRow>
+    <TableRow key={data.id}>
       <TableCell>{data['資料集名稱']}</TableCell>
       <TableCell>{data['資料集描述']}</TableCell>
       <TableCell>{data['主要欄位說明']}</TableCell>
@@ -31,6 +32,7 @@ function renderDataRowCell(data) {
 
 function Dataset(props) {
   console.log(props)
+  const [page, setPage] = useState(1)
   return (
     <div>
       <Table>
