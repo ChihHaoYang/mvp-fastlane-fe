@@ -1,0 +1,46 @@
+.tableRow {
+  word-break: break-all;
+  cursor: pointer;
+}
+
+.tableHead th {
+  background-color: #5c6bc0;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.tableRow:nth-child(even) {
+  background-color: #fff;
+}
+
+.tableRow:hover {
+  background-color: #e8eaf6 !important;
+}
+
+.tableRow td:nth-child(1) {
+  width: 25%;
+  font-weight: 700;
+}
+
+.tableRow td:nth-child(2) {
+  width: 20%;
+}
+
+.tableRow td:nth-child(3) {
+  width: 20%;
+}
+
+.tableRow td:nth-child(4) {
+  width: 10%;
+}
+
+.tableRow td:nth-child(5) {
+  width: 20%;
+}
+
+.tableRow td:nth-child(6) {
+  width: 5%;
+  min-width: 100px;
+}
